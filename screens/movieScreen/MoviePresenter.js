@@ -2,14 +2,31 @@ import React from "react";
 import { Text } from "react-native";
 import styled from "styled-components";
 import MovieSlider from "../../components/MovieSlider";
+import Section from "../../components/MovieSection";
+import MovieItem from "../../components/MovieItem";
+import { BG_COLOR } from "../../constants/Colors";
 
 const Container = styled.ScrollView`
-  flex: 1;
+  background-color: ${BG_COLOR};
 `;
 
 const MoviePresenter = ({ hotMovies, nowPlaying }) => (
   <Container>
     <MovieSlider movies={hotMovies} />
+    <Section movies={nowPlaying} title="Box Office">
+      {nowPlaying.map(movie => (
+        <MovieItem
+          id={movie.id}
+          imgUrl={movie.imgUrl}
+          title={movie.title}
+          rate={movie.rate}
+          genres={movie.genres}
+          directors={movie.directors}
+          actors={movie.actors}
+          advanceRate={movie.advanceRate}
+        />
+      ))}
+    </Section>
   </Container>
 );
 

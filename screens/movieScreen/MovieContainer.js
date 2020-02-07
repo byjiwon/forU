@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 import styled from "styled-components";
 import MoviePresenter from "./MoviePresenter";
 import { BG_COLOR } from "../../constants/Colors";
@@ -137,7 +136,7 @@ const tempData = {
 export default class extends React.Component {
   state = {
     hotMovies: tempData.hotMovies,
-    nowPlaing: tempData.nowPlaying
+    nowPlaying: tempData.nowPlaying
   };
   render() {
     const { hotMovies, nowPlaying } = this.state;

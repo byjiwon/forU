@@ -43,7 +43,7 @@ const Bg = styled.Image`
   position: absolute;
   opacity: 0.5;
   width: 375px;
-  height: 60%;
+  height: 100%;
 `;
 
 const Rank = styled.View`

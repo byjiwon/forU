@@ -3,9 +3,10 @@ import propTypes from "prop-types";
 import styled from "styled-components";
 import Swiper from "react-native-swiper";
 import MovieSlide from "./MovieSlide";
+import Layout from "../constants/Layout";
 
 const View = styled.View`
-  height: 300px;
+  height: ${Layout.height / 3};
 `;
 
 const MovieSlider = ({ movies }) => (
