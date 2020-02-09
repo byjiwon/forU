@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const View = styled.View`
-  width: 300px;
-  height: 100px;
+  margin-vertical: 5px;
 `;
 
 const Text = styled.Text``;

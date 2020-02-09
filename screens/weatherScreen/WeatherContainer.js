@@ -25,6 +25,7 @@ export default class extends React.Component {
   getWeather = async (latitude, longitude) => {
     const {
       data: {
+        name: city,
         main: { temp: currentTemp },
         weather
       }
@@ -60,6 +61,7 @@ export default class extends React.Component {
     this.setState({
       isLoading: false,
       current: {
+        city,
         currentTemp,
         currentWeather: weather[0].main
       },

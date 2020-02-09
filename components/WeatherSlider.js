@@ -4,6 +4,8 @@ import Layout from "../constants/Layout";
 import WeatherSlide from "./WeatherSlide";
 
 const Container = styled.ScrollView`
+  flex: 1;
+  width: ${Layout.width}
   height: ${Layout.height / 3};
 `;
 
