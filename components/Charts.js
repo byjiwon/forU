@@ -1,17 +1,7 @@
 import React from "react";
 import { LineChart } from "react-native-chart-kit";
-import styled from "styled-components";
 import Layout from "../constants/Layout";
-import { weatherOptions } from "./CurrentWeather";
-import { BG_COLOR } from "../constants/Colors";
-
-const Container = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Text = styled.Text``;
+import { TINT_COLOR } from "../constants/Colors";
 
 const Charts = ({ hourlyForecasts }) => {
   const data = {
@@ -19,7 +9,7 @@ const Charts = ({ hourlyForecasts }) => {
     datasets: [
       {
         data: hourlyForecasts.map(forecast => forecast.temp),
-        color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`,
+        color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
         strokeWidth: 5
       }
     ]
@@ -30,7 +20,7 @@ const Charts = ({ hourlyForecasts }) => {
     backgroundGradientFromOpacity: 0,
     backgroundGradientTo: "#FFFFFF",
     backgroundGradientToOpacity: 0,
-    color: () => BG_COLOR,
+    color: () => TINT_COLOR,
     strokeWidth: 10,
     barPercentage: 1
   };
