@@ -1,17 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { weatherOptions } from "../screens/weatherScreen/WeatherPresenter";
+import { TINT_COLOR } from "../constants/Colors";
 
 const View = styled.View`
-  margin-vertical: 5px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
 `;
 
-const Text = styled.Text``;
+const Time = styled.Text`
+  color: ${TINT_COLOR}
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 20px;
+`;
+
+const Temp = styled.Text`
+  color: ${TINT_COLOR}
+  font-size: 14px;
+  font-weight: 600;
+`;
 
 const WeatherSlide = ({ id, time, temp, weather }) => (
   <View key={id}>
-    <Text>{time}</Text>
-    <Text>{temp}</Text>
-    <Text>{weather}</Text>
+    <Time>{time}</Time>
+    <MaterialCommunityIcons
+      size={50}
+      name={weatherOptions[weather].iconName}
+      color={TINT_COLOR}
+    />
+    <Temp>{Math.floor(temp)}°C</Temp>
   </View>
 );
 

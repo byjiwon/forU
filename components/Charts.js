@@ -29,7 +29,7 @@ const Charts = ({ hourlyForecasts }) => {
     backgroundGradientFrom: "#FFFFFF",
     backgroundGradientFromOpacity: 0,
     backgroundGradientTo: "#FFFFFF",
-    backgroundGradientToOpacity: 0.5,
+    backgroundGradientToOpacity: 0,
     color: () => BG_COLOR,
     strokeWidth: 10,
     barPercentage: 1
