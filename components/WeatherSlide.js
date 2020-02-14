@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { weatherOptions } from "../screens/weatherScreen/WeatherPresenter";
+import { weatherOptions } from "../components/CurrentWeather";
 import { TINT_COLOR } from "../constants/Colors";
 
 const View = styled.View`
   flex: 1;
   align-items: center;
-  justify-content: center;
-  margin: 5px 10px;
+  justify-content: flex-end;
+  margin: 50px 10px;
 `;
 
 const Time = styled.Text`

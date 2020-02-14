@@ -12,10 +12,10 @@ const Title = styled.Text`
   font-weight: 600;
 `;
 
-const DetailScreen = () => (
+const DetailMovieScreen = () => (
   <Container>
     <Title>Details</Title>
   </Container>
 );
 
-export default DetailScreen;
+export default DetailMovieScreen;

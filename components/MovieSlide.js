@@ -11,6 +11,7 @@ const Container = styled.View`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 60px;
 `;
 
 const Column = styled.View`
@@ -99,7 +100,6 @@ const MovieSlide = ({
   navigation
 }) => (
   <Container>
-    <BgImg imgUrl={imgUrl} />
     <PosterDiv>
       <Rank>
         <RankNum>{id}위</RankNum>

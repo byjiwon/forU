@@ -1,10 +1,8 @@
 import React from "react";
-import { Alert } from "react-native";
 import Loader from "../../components/Loader";
 import styled from "styled-components";
 import * as Location from "expo-location";
 import axios from "axios";
-import Layout from "../../constants/Layout";
 import WeatherPresenter from "./WeatherPresenter";
 
 const API_KEY = "b9710d6822e577cc459ed2cd641f660e";

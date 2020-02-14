@@ -1,0 +1,32 @@
+type User {
+  id: ID!  @id
+  name: String!
+  password: String!
+}
+
+type Post {
+  id: ID! @id
+  title:     String!
+  body:    String!
+  createdAt: DateTime! @createdAt
+}
+
+// type Movie {
+//   id :       ID!             @id
+//   createdAt: DateTime!        @createdAt
+//   movies:    [Scrapedmovie!]! @relation(link:TABLE)
+// }
+
+// type Scrapedmovie {
+//   id:          ID!      @id
+//   imgUrl:      String!
+//   title:     String!
+//   rate:    Float!
+//   genres:   String!
+//   advanceRate: String!
+//   directors:   String!
+//   actors:  String!
+// }
+
+
+

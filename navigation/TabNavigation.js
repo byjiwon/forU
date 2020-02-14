@@ -4,7 +4,7 @@ import { createAppContainer } from "react-navigation";
 import MovieScreen from "../screens/movieScreen/MovieContainer";
 import { BG_COLOR } from "../constants/Colors";
 import TabBarIcon from "../components/TabBarIcon";
-import DetailScreen from "../screens/detailScreen/DetailContainer";
+import DetailScreen from "../screens/detailScreen/DetailMovieContainer";
 import WeatherScreen from "../screens/weatherScreen/WeatherContainer";
 import UploadScreen from "../screens/uploadScreen/UploadContainer";
 
